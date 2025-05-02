@@ -21,9 +21,17 @@ body{
   font: bolder;
 }
 
+.navbar-list{
+  height: 100px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .post-btn{
   background-color: rgb(29, 155, 240);
+  height: 50px;
   width: 100px;
-  height: 100px;
   border-radius: 50px;
 }
