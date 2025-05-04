@@ -8,8 +8,41 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link rel="stylesheet" href="/styles/layout.css">
     <link rel="stylesheet" href="/styles/content.css">
     <title>ReadMyBlog</title>
 </head>
-<body>
+<body style="width: 100%;">
+
+    <!-- Mobile Navbar -->
+<div id="mobileNavbar" style="display: none;">
+    <%- include("mobile-navbar.ejs"); %>
+  </div>
+  
+  <!-- Desktop Navbar -->
+  <div id="desktopNavbar" style="display: none;">
+    <%- include("navbar.ejs"); %>
+  </div>
+  
+  <script>
+    function toggleNavbar() {
+      const width = window.innerWidth;
+      const mobileNavbar = document.getElementById('mobileNavbar');
+      const desktopNavbar = document.getElementById('desktopNavbar');
+  
+      if (width < 769) {
+        mobileNavbar.style.display = 'block';
+        desktopNavbar.style.display = 'none';
+      } else {
+        mobileNavbar.style.display = 'none';
+        desktopNavbar.style.display = 'block';
+      }
+    }
+  
+    // Run on initial load
+    toggleNavbar();
+  
+    // Run on window resize
+    window.addEventListener('resize', toggleNavbar);
+  </script>
