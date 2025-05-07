@@ -6,10 +6,10 @@
     <div class="desktop-body-contents">
       <ul>
         <% postsList.forEach(function(post){ %>
+          <br>
           <hr>
           <h2><%= post.name %></h2>
-           <p><%= post.content %></p>
-           <br>
+           <p class="font2"><%= post.content %></p>
         <% }); %>
       </ul>
     </div>
@@ -20,9 +20,9 @@
     <ul>
       <% postsList.forEach(function(post){ %>
         <hr>
+        <br>
         <h2><%= post.name %></h2>
          <p><%= post.content %></p>
-         <br>
       <% }); %>
     </ul>
   </div>

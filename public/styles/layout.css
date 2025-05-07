@@ -48,12 +48,5 @@ body{
 }
 
 .mobile-body-contents{
-  margin-top: 2rem;
   color: black;
-}
-
-.font1{
-  font-family: "Tagesschrift", system-ui;
-  font-weight: 400;
-  font-style: normal;
 }

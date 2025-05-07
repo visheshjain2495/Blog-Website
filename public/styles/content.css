@@ -2,3 +2,17 @@
     display: none;
 }
 
+.font2{
+    font-family: "Edu QLD Beginner", cursive;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: larger;
+}
+
+.font1{
+    font-family: "Tagesschrift", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: larger;
+  }
