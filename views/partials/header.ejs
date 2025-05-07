@@ -12,11 +12,18 @@
     <link rel="stylesheet" href="/styles/layout.css">
     <link rel="stylesheet" href="/styles/content.css">
     <title>ReadMyBlog</title>
+    <style>
+    @media (max-width: 768px) {
+      body {
+        padding-top: 75px; /* Only apply on mobile */
+      }
+    }
+    </style>
 </head>
 <body style="width: 100%;">
 
     <!-- Mobile Navbar -->
-<div id="mobileNavbar" style="display: none;">
+<div id="mobileNavbar" style="display: none; position: fixed; top: 0; left: 0; width: 100%; z-index: 1000;">
   <div style="background-color: black; padding: 0 16px; height: 75px; display: flex; align-items: center; justify-content: space-between;">
     <svg id="hamburger-icon" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-list" viewBox="0 0 16 16">
       <path fill-rule="evenodd" d="M2.5 12.5a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1h-10a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1h-10a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1h-10a.5.5 0 0 1-.5-.5z"/>

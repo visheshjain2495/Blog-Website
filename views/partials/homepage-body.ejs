@@ -1,29 +1,26 @@
 <div id="mobileBody" style="display: none;">
-
-  </div>
-  
-  <div id="desktopBody" style="display: none;">
-    <div class="desktop-body-contents">
-      <ul>
-        <% postsList.forEach(function(post){ %>
-          <br>
-          <hr>
-          <h2><%= post.name %></h2>
-           <p class="font2"><%= post.content %></p>
-        <% }); %>
-      </ul>
-    </div>
-</div>
-
-<div id="mobileBody" style="display: none;">
   <div class="mobile-body-contents">
     <ul>
       <% postsList.forEach(function(post){ %>
         <hr>
-        <br>
         <h2><%= post.name %></h2>
-         <p><%= post.content %></p>
+         <p class="font2"><%= post.content %></p>
+         <br>
       <% }); %>
     </ul>
   </div>
 </div>
+
+<div id="desktopBody" style="display: none;">
+  <div class="desktop-body-contents">
+    <ul>
+      <% postsList.forEach(function(post){ %>
+        <hr>
+        <h2><%= post.name %></h2>
+         <p class="font2"><%= post.content %></p>
+         <br>
+      <% }); %>
+    </ul>
+  </div>
+</div>
+<script src="/js/home.js"></script>
