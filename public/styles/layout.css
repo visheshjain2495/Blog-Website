@@ -1,7 +1,9 @@
 body{
   margin: 0;
   padding: 0;
-  font-family: 'Arial', sans-serif;
+  font-family: "Tagesschrift", system-ui;
+  font-weight: 400;
+  font-style: normal;
   color: white;
 }
 
@@ -39,7 +41,19 @@ body{
   border-radius: 50px;
 }
 
-.contents{
+.desktop-body-contents{
   margin-left: 22%;
   color: black;
+  margin-top: 2rem;
+}
+
+.mobile-body-contents{
+  margin-top: 2rem;
+  color: black;
+}
+
+.font1{
+  font-family: "Tagesschrift", system-ui;
+  font-weight: 400;
+  font-style: normal;
 }
