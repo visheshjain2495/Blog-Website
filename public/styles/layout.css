@@ -51,3 +51,21 @@ body{
   color: black;
   margin-top: 0;
 }
+
+.new-post-form{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+#desktopPostBody{
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+.selcted-text-area:focus {
+  outline: none;
+  border: 2px solid black;  /* your own border */
+  box-shadow: 0 0 5px rgba(0,0,0,0.5);  /* optional shadow effect */
+}
