@@ -38,3 +38,8 @@ body{
   width: 100px;
   border-radius: 50px;
 }
+
+.contents{
+  margin-left: 22%;
+  color: black;
+}
