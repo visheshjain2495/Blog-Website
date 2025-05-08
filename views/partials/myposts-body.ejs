@@ -1,0 +1,26 @@
+<div id="mobileMyPostBody" style="display: none;">
+    <div class="mobile-body-contents">
+      <ul>
+        <% MyPosts.forEach(function(post){ %>
+          <hr>
+          <h2><%= post.name %></h2>
+           <p class="font2"><%= post.content %></p>
+           <br>
+        <% }); %>
+      </ul>
+    </div>
+  </div>
+  
+  <div id="desktopMyPostBody" style="display: none;">
+    <div class="desktop-body-contents">
+      <ul>
+        <% MyPosts.forEach(function(post){ %>
+          <hr>
+          <h2><%= post.name %></h2>
+           <p class="font2"><%= post.content %></p>
+           <br>
+        <% }); %>
+      </ul>
+    </div>
+  </div>
+  <script src="/js/myposts.js"></script>

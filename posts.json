@@ -1,27 +1,27 @@
 [
   {
-    "name": "Tara Ploughman",
-    "content": "The less confident you are, the more serious you have to act."
-  },
-  {
-    "name": "W. H. Auden",
-    "content": "The sons of Hermes love to play,\nAnd only do their best when they\nAre told they oughtn't;\nApollo's children never shrink\nFrom boring jobs but have to think\nTheir work important."
+    "name": "Winston Churchill",
+    "content": "Short words are best and the old words when short are best of all."
   },
   {
     "name": "Abelson & Sussman",
     "content": "Programs must be written for people to read, and only incidentally for machines to execute."
   },
   {
-    "name":"George Boole",
+    "name": "Johnson",
+    "content": "That book is good in vain which the reader throws away. He only is the master who keeps the mind in pleasing captivity;\nwhose pages are perused with eagerness, and in hope of new pleasure are perused again; and whose conclusion is perceived with an eye of sorrow, such as the traveller casts upon departing day."
+  },
+  {
+    "name": "George Boole",
     "content": "That language is an instrument of human reason, and not merely a medium for the expression of thought, is a truth generally admitted."
   },
   {
-    "name": "Winston Churchill",
-    "content": "Short words are best and the old words when short are best of all."
+    "name": "W. H. Auden",
+    "content": "The sons of Hermes love to play,\nAnd only do their best when they\nAre told they oughtn't;\nApollo's children never shrink\nFrom boring jobs but have to think\nTheir work important."
   },
   {
-    "name": "Johnson",
-    "content": "That book is good in vain which the reader throws away. He only is the master who keeps the mind in pleasing captivity;\nwhose pages are perused with eagerness, and in hope of new pleasure are perused again; and whose conclusion is perceived with an eye of sorrow, such as the traveller casts upon departing day."
+    "name": "Tara Ploughman",
+    "content": "The less confident you are, the more serious you have to act."
   },
   {
     "name": "Alan Kay",
@@ -30,5 +30,9 @@
   {
     "name": "William Friedkin",
     "content": "But the audience is right. They're always, always right. You hear directors complain that the advertising was lousy, the distribution is no good, the date was wrong to open the film. I don't believe that. The audience is never wrong. Never."
+  },
+  {
+    "name": "Vishesh Jain",
+    "content": "This is my first post"
   }
 ]

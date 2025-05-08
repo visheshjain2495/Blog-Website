@@ -9,19 +9,16 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(express.static("public"));
 
+let allPosts = JSON.parse(fs.readFileSync('posts.json', 'utf-8'));
+let myposts = JSON.parse(fs.readFileSync('myposts.json', 'utf-8'));
+
 app.get('/', (req, res)=>{
     res.render('index.ejs', { postsList: allPosts });
-});
-
-app.get('/myposts', (req, res)=>{
-    res.render('myposts.ejs');
 });
 
 app.get('/post', (req, res)=>{
     res.render('post.ejs');
 });
-
-let allPosts = JSON.parse(fs.readFileSync('posts.json', 'utf-8'));
 
 function shuffleArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
@@ -32,10 +29,16 @@ function shuffleArray(array) {
 
 shuffleArray(allPosts);
 
-app.get('/myposts', (req, res) => {
-    let shuffledPosts = [...allPosts];
-    shuffleArray(shuffledPosts);
-    res.render('post.ejs', { postsList: shuffledPosts });
+app.post("/submit", (req, res) => {
+    myposts.push(req.body);
+    allPosts.push(req.body);
+    fs.writeFileSync('myposts.json', JSON.stringify(myposts, null, 2), 'utf-8');
+    fs.writeFileSync('posts.json', JSON.stringify(allPosts, null, 2), 'utf-8');
+    res.render("post.ejs", {message : "Post Submitted!"});
+});
+
+app.get('/myposts', (req, res)=>{
+    res.render('myposts.ejs', { MyPosts: myposts });
 });
 
 app.listen(PORT, () => {

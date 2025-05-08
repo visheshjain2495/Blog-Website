@@ -59,13 +59,13 @@ body{
   margin-bottom: 2rem;
 }
 
-#desktopPostBody{
+#desktopPostBody, #mobilePostBody{
   margin-right: 10%;
   margin-left: 10%;
 }
 
 .selcted-text-area:focus {
   outline: none;
-  border: 2px solid black;  /* your own border */
-  box-shadow: 0 0 5px rgba(0,0,0,0.5);  /* optional shadow effect */
+  border: 2px solid black;
+  box-shadow: 0 0 5px rgba(0,0,0,0.5);
 }
